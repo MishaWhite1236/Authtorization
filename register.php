@@ -18,10 +18,10 @@ session_start();
           
           </div>
             <div class="col-4">
-                <h1>Welcome to auth</h1>
+                <h1>Welcome to register</h1>
             </div>
             <div class="col-4">
-                
+          
             </div>
         </div>
     </div>
@@ -31,23 +31,24 @@ session_start();
           
           </div>
             <div class="col-4">
-            <form>
+            <form action="vendor/reg.php" method="post" enctype="multipart/form-data">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  name = 'email'>
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
   </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password confirm</label>
+    <input type="password" name="password_confirm" class="form-control" id="exampleInputPassword1">
   </div>
-  <button type="submit" class="button31">Auth</button>
-  <a href="register.php" class="button2" tabindex="0">Registration</a>
+
+  <button type="submit" class="button31">Register!</button>
 </form>
+
             </div>
         </div>
     </div>
